@@ -1,0 +1,65 @@
+/* Белый цвет color: #FFFFFF; */
+/* Светлый фон color:#E5E5E5; */
+/* Темный фон color:#2F303A; */
+/* Синий цвет color:#2196F3; */
+/* Черный текст color:#212121 */
+/* Серый цвет color:#757575; */
+
+ul {list-style: none;}
+a {text-decoration: none;}
+
+body{background-color:#ffffff ;}
+
+/* Логотип */
+.logo{color:#212121}
+.web{color:#2196F3}
+
+/* Навигация */
+.link-nav{color:#212121}
+.link-nav:hover, .link-nav:focus {color:#2196F3}
+
+/* Контакты */
+.link-auth{color:#757575}
+.link-auth:hover, .link-auth:focus {color:#2196F3}
+
+/* Шапка */
+.hero{background-color:#2F303A}
+.hero-text{color:#FFFFFF}
+.btn{background-color:#2196F3;}
+.btn{color:#ffffff}
+
+/* Особенности */
+.after-hero{background-color:#E5E5E5}
+.zero-text{color:#212121}
+.after-title{color:#212121}
+.after-text{color:#757575}
+
+/* Чем мы занимаемся */
+.work{background-color:#E5E5E5}
+.work-text{color:#212121}
+
+/* Наша команда */
+.team{background-color:#F5F4FA;}
+.team-itam{color:#ffffff}
+.worker{color:#212121}
+.team-text{color:#757575}
+
+/* Подвал */
+.footer{background-color:#2F303A}
+.address{color:#ffffff}
+.studio{color:#ffffff}
+
+/* Потфолио */
+.portfolio{background-color:#E5E5E5}
+.portfolio-text{color:#212121}
+
+/* Портфолио фильтры */
+.portfolio-btn{background-color: #F5F4FA;}
+.portfolio-btn{color:#212121}
+.portfolio-btn:hover, .portfolio-btn:focus{background-color:#2196F3;}
+.portfolio-btn:hover, .portfolio-btn:focus{color:#FFFFFF}
+
+/*Проекты*/
+.project-itam{color:#ffffff}
+.project-title{color:#212121}
+.project-text{color:#757575}
