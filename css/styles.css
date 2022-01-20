@@ -28,6 +28,9 @@ body {
 address {
   font-style: normal;
 }
+.btn {
+  cursor: pointer;
+}
 
 /* Логотип */
 .logo {
