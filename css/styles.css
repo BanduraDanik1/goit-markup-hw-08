@@ -7,59 +7,125 @@
 
 ul {list-style: none;}
 a {text-decoration: none;}
-
-body{background-color:#ffffff ;}
+body{
+    font-family:Roboto, sans-serif;
+    background-color:#ffffff;}
+address{font-style: normal;}
 
 /* Логотип */
-.logo{color:#212121}
+.logo{
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color:#212121}
 .web{color:#2196F3}
 
+
 /* Навигация */
-.link-nav{color:#212121}
+.link-nav{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color:#212121}
 .link-nav:hover, .link-nav:focus {color:#2196F3}
 
 /* Контакты */
-.link-auth{color:#757575}
+.link-auth{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color:#757575}
 .link-auth:hover, .link-auth:focus {color:#2196F3}
 
 /* Шапка */
 .hero{background-color:#2F303A}
-.hero-text{color:#FFFFFF}
+.hero-text{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    color:#FFFFFF}
 .btn{background-color:#2196F3;}
-.btn{color:#ffffff}
+.btn{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    color:#ffffff}
 
 /* Особенности */
-.after-hero{background-color:#E5E5E5}
+.after-hero{background-color:#FFFFFF}
 .zero-text{color:#212121}
-.after-title{color:#212121}
-.after-text{color:#757575}
+.after-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color:#212121}
+.after-text{
+    font-size: 14px;
+    line-height: 1.71;
+    color:#757575}
 
 /* Чем мы занимаемся */
-.work{background-color:#E5E5E5}
-.work-text{color:#212121}
+.work{background-color:#FFFFFF}
+.work-text{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    color:#212121}
 
 /* Наша команда */
 .team{background-color:#F5F4FA;}
+.team-subject{
+    font-weight:700;
+    font-size: 36px;
+    line-height: 1.16;
+    color: #212121;
+    
+    color: #212121;}
 .team-itam{color:#ffffff}
-.worker{color:#212121}
-.team-text{color:#757575}
+.worker{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    color:#212121}
+.team-text{
+    font-size: 16px;
+    line-height: 1.18;
+    color:#757575}
 
 /* Подвал */
 .footer{background-color:#2F303A}
-.address{color:#ffffff}
+.footer-nav{
+    font-size: 14px;
+    line-height: 1.71;
+    color:#ffffff}
+.footer-auth{color:#ffffff}
+.footer-auth:hover, .footer-auth:focus {color:#2196F3}
 .studio{color:#ffffff}
 
 /* Потфолио */
-.portfolio{background-color:#E5E5E5}
+.portfolio{background-color:#FFFFFF}
 .portfolio-text{color:#212121}
 
 /* Портфолио фильтры */
 .portfolio-btn{background-color: #F5F4FA;}
-.portfolio-btn{color:#212121}
+.portfolio-btn{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    color:#212121}
 .portfolio-btn:hover, .portfolio-btn:focus{background-color:#2196F3;}
 .portfolio-btn:hover, .portfolio-btn:focus{color:#FFFFFF}
 
 /*Проекты*/
 .project-itam{color:#ffffff}
-.project-title{color:#212121}
-.project-text{color:#757575}
+.project-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    color:#212121}
+.project-text{
+    font-size: 16px;
+    line-height: 1.87;
+    color:#757575}
