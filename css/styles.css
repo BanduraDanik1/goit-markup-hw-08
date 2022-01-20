@@ -6,6 +6,7 @@
 /* Серый цвет color:rgba(117, 117, 117, 1) */
 
 :root {
+  --link-nav: rgba(33, 33, 33, 1);
   --title-text: rgba(33, 33, 33, 1);
   --text: rgba(117, 117, 117, 1);
   --logo: rgba(33, 150, 243, 1);
@@ -38,7 +39,7 @@ address {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: var(--title-text);
+  color: rgba(33, 33, 33, 1);
 }
 .web {
   color: var(--logo);
@@ -49,7 +50,7 @@ address {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  color: var(--title-text);
+  color: var(--link-nav);
 }
 .link-nav:hover,
 .link-nav:focus {
