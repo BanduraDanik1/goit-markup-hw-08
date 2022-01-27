@@ -372,17 +372,24 @@ address {
 }
 
 .main-list {
+  height: auto;
   display: flex;
   justify-content: center;
 }
 
-/*.project {
+.project {
   display: flex;
-}*/
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
-.project-itam {
-  box-sizing: border-box;
+.project-itam:not(:last-child) {
+  margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.project-itam:nth-last-child(3n + 1) {
+  margin-right: 0px;
 }
 
 .img-portfolio {
