@@ -13,28 +13,55 @@
   --hover: rgba(33, 150, 243, 1);
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 ul {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
+
 a {
   text-decoration: none;
 }
+
 body {
+  margin: 0px 0px;
   font-family: Roboto, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
   background-color: rgba(255, 255, 255, 1);
   color: rgba(117, 117, 117, 1);
 }
+
 address {
   font-style: normal;
 }
-.btn {
-  cursor: pointer;
+
+/*Контейнер*/
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
 }
 
 /* Логотип */
 .logo {
+  display: inline-block;
+  margin-right: 93px;
+  box-sizing: border-box;
+  width: 145px;
+  height: 31px;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -45,8 +72,22 @@ address {
   color: var(--logo);
 }
 
-/* Навигация */
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.list-nav:not(:last-child) {
+  margin-right: 40px;
+}
+
 .link-nav {
+  display: block;
+  padding: 32px 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -58,7 +99,18 @@ address {
 }
 
 /* Контакты */
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.list-auth:not(:last-child) {
+  margin-right: 50px;
+}
+
 .link-auth {
+  display: block;
+  padding: 32px 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -71,29 +123,64 @@ address {
 
 /* Шапка */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
   background-color: rgba(47, 48, 58, 1);
 }
 .hero-text {
+  box-sizing: border-box;
+  width: 696px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   color: rgba(255, 255, 255, 1);
 }
+
 .btn {
-  background-color: rgba(33, 150, 243, 1);
-}
-.btn {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: 0;
+  min-width: 200px;
+  height: 50px;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
   color: rgba(255, 255, 255, 1);
+  background-color: rgba(33, 150, 243, 1);
+  cursor: pointer;
 }
 
 /* Особенности */
+
+.after-hero {
+  margin: 0 auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.header-nav:not(:last-child) {
+  margin-right: 30px;
+}
+
+.hero-nav {
+  display: flex;
+  justify-content: center;
+}
+
 .zero-text {
+  display: none;
   color: var(--title-text);
 }
 .after-title {
+  margin-bottom: 10px;
+  align-items: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -101,32 +188,80 @@ address {
   color: var(--title-text);
 }
 .after-text {
+  width: 270px;
+  height: 75px;
   font-size: 14px;
   line-height: 1.71;
 }
 
 /* Чем мы занимаемся */
+
+.work {
+  padding-bottom: 94px;
+}
+
+.work-img {
+  display: flex;
+}
+
 .work-text {
+  text-align: center;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   color: var(--title-text);
 }
 
+.work-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.work-list {
+  width: 370px;
+  height: 294px;
+}
+
 /* Наша команда */
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: rgba(245, 244, 250, 1);
 }
+
+.team-list {
+  display: flex;
+}
+
 .team-subject {
+  margin-bottom: 50px;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   color: var(--title-text);
 }
-.team-itam {
-  background-color: rgba(255, 255, 255, 1);
+.img-worker {
+  margin-bottom: 30px;
 }
+
+.team-itam:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-itam {
+  box-sizing: border-box;
+  margin: 0;
+  border-radius: 0px 0px 4px 4px;
+  width: 270px;
+  height: 368px;
+  background-color: rgba(255, 255, 255, 1);
+  text-align: center;
+}
+
 .worker {
+  box-sizing: border-box;
+  margin-bottom: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -138,39 +273,88 @@ address {
 }
 
 /* Подвал */
-.footer {
-  background-color: rgba(47, 48, 58, 1);
-}
-.footer-nav {
-  font-size: 14px;
-  line-height: 1.71;
-  color: rgba(255, 255, 255, 1);
-}
-.footer-auth {
-  color: rgba(255, 255, 255, 1);
-}
-.footer-auth:hover,
-.footer-auth:focus {
-  color: var(--hover);
-}
 .studio {
   color: rgba(255, 255, 255, 1);
 }
 
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: rgba(47, 48, 58, 1);
+}
+
+.logo-footer {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 145px;
+  height: 31px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.footer-nav {
+  display: inline-block;
+  width: 231px;
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 1);
+}
+.footer-text {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-bottom: 9px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-text:hover,
+.footer-text:focus {
+  color: var(--hover);
+}
+
+.footer-mail {
+  display: inline-block;
+  margin-bottom: 9px;
+  color: var(--text);
+}
+
+.footer-tel {
+  color: var(--text);
+}
+
 /* Потфолио */
+
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .portfolio-text {
   color: var(--title-text);
 }
 
 /* Портфолио фильтры */
-.portfolio-btn {
-  background-color: rgba(245, 244, 250, 1);
+
+.btn-list:not(:last-child) {
+  margin-right: 8px;
 }
+
 .portfolio-btn {
+  display: inline-block;
+  box-sizing: border-box;
+  min-width: 73px;
+  height: 38px;
+  margin-bottom: 50px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   color: var(--title-text);
+  background-color: rgba(245, 244, 250, 1);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -183,7 +367,33 @@ address {
 
 /*Проекты*/
 
+.portfolio-text {
+  display: none;
+}
+
+.main-list {
+  display: flex;
+  justify-content: center;
+}
+
+/*.project {
+  display: flex;
+}*/
+
+.project-itam {
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.img-portfolio {
+  box-sizing: border-box;
+  width: 370px;
+  height: 294px;
+  margin-bottom: 20px;
+}
+
 .project-title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
