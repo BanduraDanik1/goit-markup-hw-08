@@ -138,14 +138,7 @@ address {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/background.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: rgba(47, 48, 58, 1);
 }
 .hero-text {
   box-sizing: border-box;
@@ -195,30 +188,6 @@ address {
 
 .hero-list:not(:last-child) {
   margin-right: 30px;
-}
-
-.hero-list::before {
-  display: block;
-  margin-bottom: 30px;
-  content: "";
-  height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 4px;
-  background-color: rgba(245, 244, 250, 1);
-}
-
-.hero-list:nth-child(1)::before {
-  background-image: url(../images/icons.svg/Group.svg);
-}
-.hero-list:nth-child(2)::before {
-  background-image: url(../images/icons.svg/clock\ 1.svg);
-}
-.hero-list:nth-child(3)::before {
-  background-image: url(../images/icons.svg/diagram\ 1.svg);
-}
-.hero-list:nth-child(4)::before {
-  background-image: url(../images/icons.svg/astronaut\ 1.svg);
 }
 
 .zero-text {
@@ -305,19 +274,6 @@ address {
   margin-right: 30px;
 }
 
-.team-itam::after {
-  display: block;
-  margin-top: 16px;
-  width: 44px;
-  height: 44px;
-  content: "";
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../images/icons.svg/Ellipse.svg);
-  /*background-color: blue;*/
-}
-
 .worker {
   box-sizing: border-box;
   margin-bottom: 10px;
@@ -368,10 +324,10 @@ address {
   color: rgba(255, 255, 255, 1);
 }
 
-.footer-text:hover,
+/*.footer-text:hover,
 .footer-text:focus {
   color: var(--hover);
-}
+}*/
 
 .footer-mail {
   display: inline-block;
