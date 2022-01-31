@@ -263,8 +263,6 @@ address {
 
 .team-itam {
   box-sizing: border-box;
-  margin: 0;
-  height: 428px;
   border-radius: 0px 0px 4px 4px;
   background-color: rgba(255, 255, 255, 1);
   text-align: center;
@@ -283,6 +281,7 @@ address {
   color: var(--title-text);
 }
 .team-text {
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
 }
