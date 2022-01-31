@@ -33,6 +33,14 @@ ul {
 
 a {
   text-decoration: none;
+  color: rgba(238, 238, 238, 1);
+}
+
+img {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
 }
 
 body {
@@ -70,6 +78,10 @@ address {
 }
 .web {
   color: var(--logo);
+}
+
+.header {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
 .header-nav {
@@ -126,7 +138,14 @@ address {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-color: rgba(47, 48, 58, 1);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .hero-text {
   box-sizing: border-box;
@@ -172,6 +191,34 @@ address {
 .hero-nav {
   display: flex;
   justify-content: center;
+}
+
+.hero-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.hero-list::before {
+  display: block;
+  margin-bottom: 30px;
+  content: "";
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+  background-color: rgba(245, 244, 250, 1);
+}
+
+.hero-list:nth-child(1)::before {
+  background-image: url(../images/icons.svg/Group.svg);
+}
+.hero-list:nth-child(2)::before {
+  background-image: url(../images/icons.svg/clock\ 1.svg);
+}
+.hero-list:nth-child(3)::before {
+  background-image: url(../images/icons.svg/diagram\ 1.svg);
+}
+.hero-list:nth-child(4)::before {
+  background-image: url(../images/icons.svg/astronaut\ 1.svg);
 }
 
 .zero-text {
@@ -245,23 +292,35 @@ address {
   margin-bottom: 30px;
 }
 
-.team-itam:not(:last-child) {
-  margin-right: 30px;
-}
-
 .team-itam {
   box-sizing: border-box;
   margin: 0;
+  height: 428px;
   border-radius: 0px 0px 4px 4px;
-  width: 270px;
-  height: 368px;
   background-color: rgba(255, 255, 255, 1);
   text-align: center;
 }
 
+.team-itam:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-itam::after {
+  display: block;
+  margin-top: 16px;
+  width: 44px;
+  height: 44px;
+  content: "";
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/icons.svg/Ellipse.svg);
+  /*background-color: blue;*/
+}
+
 .worker {
   box-sizing: border-box;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -346,7 +405,6 @@ address {
   box-sizing: border-box;
   min-width: 73px;
   height: 38px;
-  margin-bottom: 50px;
   margin-left: 0px;
   margin-right: 0px;
   padding: 6px 22px;
@@ -374,6 +432,7 @@ address {
 .main-list {
   height: auto;
   display: flex;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
@@ -392,11 +451,11 @@ address {
   margin-right: 0px;
 }
 
-.img-portfolio {
-  box-sizing: border-box;
-  width: 370px;
-  height: 294px;
-  margin-bottom: 20px;
+.project-div {
+  padding: 20px 24px;
+  border-right: 1px solid rgba(238, 238, 238, 1);
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+  border-left: 1px solid rgba(238, 238, 238, 1);
 }
 
 .project-title {
