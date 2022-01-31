@@ -430,9 +430,9 @@ address {
 }
 
 .main-list {
-  height: auto;
   display: flex;
   margin-bottom: 50px;
+  height: auto;
   justify-content: center;
 }
 
