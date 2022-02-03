@@ -443,10 +443,6 @@ address {
 
 /* Потфолио */
 
-..portfolio {
-  max-height: ;
-}
-
 .portfolio-text {
   color: var(--title-text);
 }
