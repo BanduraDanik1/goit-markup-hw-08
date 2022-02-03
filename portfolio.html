@@ -1,162 +1,202 @@
-<div class="project-div">
-    <!DOCTYPE html>
-    <html lang="ru">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="./css/styles.css" />
-    </head>
+<body>
+    <!--Верхняя линия-->
+    <header class="header">
+        <div class="container header-nav">
+            <nav class="header-nav">
+                <a href="./index.html" class="logo"> <span class="web">Web</span>Studio</a>
+                <ul class="site-nav">
+                    <li class="list-nav"><a class="link-nav" href="./index.html">Студия</a></li>
+                    <li class="list-nav"><a class="link-nav" href="./portfolio.html">Портфолио</a></li>
+                    <li class="list-nav"><a class="link-nav" href="/">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="auth-nav">
+                <li class="list-auth"><a class="link-auth" href="mailto:info@devstudio.com">
+                        <svg class="svg-auth" width="16" height="12">
+                            <use href="./images/icons.svg/symbol-defs.svg#icon-mail"></use>
+                        </svg>info@devstudio.com </a></li>
+                <li class="list-auth"><a class="link-auth" href="tel:+38 096 111 11 11">
+                        <svg class="svg-auth" width="10" height="16">
+                            <use href="./images/icons.svg/symbol-defs.svg#icon-tel"></use>
+                        </svg>+38 096 11 11 111</a> </li>
+            </ul>
+        </div>
+    </header>
 
-    <body>
-        <!--Верхняя линия-->
-        <header class="header">
-            <div class="container header-nav">
-                <nav class="header-nav">
-                    <a href="./index.html" class="logo"> <span class="web">Web</span>Studio</a>
-                    <ul class="site-nav">
-                        <li class="list-nav"><a class="link-nav" href="./index.html">Студия</a></li>
-                        <li class="list-nav"><a class="link-nav" href="./portfolio.html">Портфолио</a></li>
-                        <li class="list-nav"><a class="link-nav" href="/">Контакты</a></li>
-                    </ul>
-                </nav>
-                <ul class="auth-nav">
-                    <li class="list-auth"><a class="link-auth" href="mailto:info@devstudio.com">info@devstudio.com</a>
+    <main>
+        <section class="section portfolio">
+            <div class="container">
+                <h1 class="portfolio-text">Портфолио</h1>
+                <!--Фильтры-->
+                <ul class="main-list">
+                    <li class="btn-list"> <button class="portfolio-btn btn" type="button">Все</button></li>
+                    <li class="btn-list"> <button class="portfolio-btn btn" type="button">Веб-сайты</button></li>
+                    <li class="btn-list"> <button class="portfolio-btn btn" type="button">Приложения</button></li>
+                    <li class="btn-list"> <button class="portfolio-btn btn" type="button">Дизайн</button></li>
+                    <li class="btn-list"> <button class="portfolio-btn btn" type="button">Маркетинг</button></li>
+                </ul>
+                <!--Проекты-->
+                <ul class="project">
+                    <li class="project-itam">
+                        <a href="/">
+                            <img class="img-portfolio" src="./images/Портфолио/img.jpg" alt="Экран ноутбука с портфолио"
+                                width="370">
+                            <div class="project-div">
+                                <h2 class="project-title">Технокряк</h2>
+                                <p class="project-text">Веб-сайт</p>
+                            </div>
+                        </a>
                     </li>
-                    <li class="list-auth"><a class="link-auth" href="tel:+38 096 111 11 11">+38 096 111 11 11</a></li>
+                    <li class="project-itam">
+                        <a href="/">
+                            <img class="img-portfolio" src="./images/Портфолио/img-2.jpg" alt="Два баскетболиста"
+                                width="370">
+                            <div class="project-div">
+                                <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
+                                <p class="project-text">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project-itam">
+                        <a href="/">
+                            <img class="img-portfolio" src="./images/Портфолио/img-3.jpg"
+                                alt="Логотип рксторана в виде рыбы" width="370">
+                            <div class="project-div">
+                                <h2 class="project-title">Ресторан Seafood</h2>
+                                <p class="project-text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project-itam">
+                        <a href="/">
+                            <img class="img-portfolio" src="./images/Портфолио/img-4.jpg" alt="Черные наушники"
+                                width="370">
+                            <div class="project-div">
+                                <h2 class="project-title">Проект Prime</h2>
+                                <p class="project-text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project-itam">
+                        <a href="/">
+                            <img class="img-portfolio" src="./images/Портфолио/img-5.jpg"
+                                alt="Белая и коричневая коробка" width="370">
+                            <div class="project-div">
+                                <h2 class="project-title">Проект Boxes</h2>
+                                <p class="project-text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project-itam">
+                        <a href="/">
+                            <img class="img-portfolio" src="./images/Портфолио/img-6.jpg" alt="Экран монитова с сайтом"
+                                width="370">
+                            <div class="project-div">
+                                <h2 class="project-title">Inspiration has no Borders</h2>
+                                <p class="project-text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project-itam">
+                        <a href="/">
+                            <img class="img-portfolio" src="./images/Портфолио/img-7.jpg" alt="Открытый журнал"
+                                width="370">
+                            <div class="project-div">
+                                <h2 class="project-title">Издание Limited Edition</h2>
+                                <p class="project-text">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project-itam">
+                        <a href="/">
+                            <img class="img-portfolio" src="./images/Портфолио/img-8.jpg" alt="Фото лэйбы" width="370">
+                            <div class="project-div">
+                                <h2 class="project-title">Проект LAB</h2>
+                                <p class="project-text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project-itam">
+                        <a href="/">
+                            <img class="img-portfolio" src="./images/Портфолио/img-9.jpg"
+                                alt="Руки набирают текст на ноубуке" width="370">
+                            <div class="project-div">
+                                <h2 class="project-title">Growing Business</h2>
+                                <p class="project-text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
             </div>
-        </header>
-
-        <main>
-            <section class="portfolio">
-                <div class="container">
-                    <h1 class="portfolio-text">Портфолио</h1>
-                    <!--Фильтры-->
-                    <ul class="main-list">
-                        <li class="btn-list"> <button class="portfolio-btn btn" type="button">Все</button></li>
-                        <li class="btn-list"> <button class="portfolio-btn btn" type="button">Веб-сайты</button></li>
-                        <li class="btn-list"> <button class="portfolio-btn btn" type="button">Приложения</button></li>
-                        <li class="btn-list"> <button class="portfolio-btn btn" type="button">Дизайн</button></li>
-                        <li class="btn-list"> <button class="portfolio-btn btn" type="button">Маркетинг</button></li>
+        </section>
+    </main>
+    <!--Подвал-->
+    <footer class="footer">
+        <div class="container footer-flex">
+            <div class="footer-auth">
+                <a class="logo-footer" href="/"> <span class="web">Web</span><span class="studio">Studio</span>
+                </a>
+                <address>
+                    <ul class="footer-nav">
+                        <li>
+                            <p class="footer-text">г. Киев, пр-т Леси Украинки, 26</p>
+                        </li>
+                        <li><a class="footer-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a class="footer-tel" href="tel:+38 096 11 11 111">+38 096 11 11 111</a></li>
                     </ul>
-                    <!--Проекты-->
-                    <ul class="project">
-                        <li class="project-itam">
-                            <a href="/">
-                                <img class="img-portfolio" src="./images/Портфолио/img.jpg"
-                                    alt="Экран ноутбука с портфолио" width="370">
-                                <div class="project-div">
-                                    <h2 class="project-title">Технокряк</h2>
-                                    <p class="project-text">Веб-сайт</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="project-itam">
-                            <a href="/">
-                                <img class="img-portfolio" src="./images/Портфолио/img-2.jpg" alt="Два баскетболиста"
-                                    width="370">
-                                <div class="project-div">
-                                    <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
-                                    <p class="project-text">Дизайн</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="project-itam">
-                            <a href="/">
-                                <img class="img-portfolio" src="./images/Портфолио/img-3.jpg"
-                                    alt="Логотип рксторана в виде рыбы" width="370">
-                                <div class="project-div">
-                                    <h2 class="project-title">Ресторан Seafood</h2>
-                                    <p class="project-text">Приложение</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="project-itam">
-                            <a href="/">
-                                <img class="img-portfolio" src="./images/Портфолио/img-4.jpg" alt="Черные наушники"
-                                    width="370">
-                                <div class="project-div">
-                                    <h2 class="project-title">Проект Prime</h2>
-                                    <p class="project-text">Маркетинг</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="project-itam">
-                            <a href="/">
-                                <img class="img-portfolio" src="./images/Портфолио/img-5.jpg"
-                                    alt="Белая и коричневая коробка" width="370">
-                                <div class="project-div">
-                                    <h2 class="project-title">Проект Boxes</h2>
-                                    <p class="project-text">Приложение</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="project-itam">
-                            <a href="/">
-                                <img class="img-portfolio" src="./images/Портфолио/img-6.jpg"
-                                    alt="Экран монитова с сайтом" width="370">
-                                <div class="project-div">
-                                    <h2 class="project-title">Inspiration has no Borders</h2>
-                                    <p class="project-text">Веб-сайт</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="project-itam">
-                            <a href="/">
-                                <img class="img-portfolio" src="./images/Портфолио/img-7.jpg" alt="Открытый журнал"
-                                    width="370">
-                                <div class="project-div">
-                                    <h2 class="project-title">Издание Limited Edition</h2>
-                                    <p class="project-text">Дизайн</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="project-itam">
-                            <a href="/">
-                                <img class="img-portfolio" src="./images/Портфолио/img-8.jpg" alt="Фото лэйбы"
-                                    width="370">
-                                <div class="project-div">
-                                    <h2 class="project-title">Проект LAB</h2>
-                                    <p class="project-text">Маркетинг</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="project-itam">
-                            <a href="/">
-                                <img class="img-portfolio" src="./images/Портфолио/img-9.jpg"
-                                    alt="Руки набирают текст на ноубуке" width="370">
-                                <div class="project-div">
-                                    <h2 class="project-title">Growing Business</h2>
-                                    <p class="project-text">Приложение</p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </main>
-        <!--Подвал-->
-        <footer class="footer">
-            <div class="container">
-                <a class="logo-footer" href="/"> <span class="web">Web</span><span class="studio">Studio</span></a>
-                <ul class="site-nav">
-                    <address>
-                        <ul class="footer-nav">
-                            <li>
-                                <p class="footer-text">г. Киев, пр-т Леси Украинки, 26</p>
-                            </li>
-                            <li><a class="footer-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                            <li><a class="footer-tel" href="tel:+38 096 111 11 11">+38 096 111 11 11</a></li>
-                        </ul>
-                    </address>
+                </address>
             </div>
-        </footer>
-    </body>
-
-    </html>
+            <div class="footer-social">
+                <p class="text-social">присоединяйтесь</p>
+                <ul class="footer-list">
+                    <li class="itam-icon">
+                        <a class="footer-icon" href="#">
+                            <svg class="svg-team" width="20" height="20">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-instagram">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="itam-icon">
+                        <a class="footer-icon" href="#">
+                            <svg class="svg-team" width="20" height="20">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-twitter">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="itam-icon">
+                        <a class="footer-icon" href="#">
+                            <svg class="svg-team" width="20" height="20">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-facebook">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="itam-icon">
+                        <a class="footer-icon" href="#">
+                            <svg class="svg-team" width="20" height="20">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -6,11 +6,15 @@
 /* Серый цвет color:rgba(117, 117, 117, 1) */
 
 :root {
+  --log: rgba(33, 33, 33, 1);
   --link-nav: rgba(33, 33, 33, 1);
   --title-text: rgba(33, 33, 33, 1);
   --text: rgba(117, 117, 117, 1);
   --logo: rgba(33, 150, 243, 1);
   --hover: rgba(33, 150, 243, 1);
+  --hover-icon: rgba(255, 255, 255, 1);
+  --icon: rgba(175, 177, 184, 1);
+  --line: rgba(238, 238, 238, 1);
 }
 
 p,
@@ -63,18 +67,23 @@ address {
   width: 1170px;
 }
 
+/*Секция*/
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* Логотип */
 .logo {
   display: inline-block;
   margin-right: 93px;
   box-sizing: border-box;
-  width: 145px;
-  height: 31px;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
+  letter-spacing: 0.03em;
   line-height: 1.19;
-  color: rgba(33, 33, 33, 1);
+  color: var(--log);
 }
 .web {
   color: var(--logo);
@@ -94,17 +103,20 @@ address {
 }
 
 .list-nav:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 50px;
 }
 
 .link-nav {
   display: block;
   padding: 32px 0;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--link-nav);
 }
+
 .link-nav:hover,
 .link-nav:focus {
   color: var(--hover);
@@ -114,6 +126,12 @@ address {
 .auth-nav {
   display: flex;
   margin-left: auto;
+  align-items: center;
+  letter-spacing: 0.02em;
+}
+
+.list-auth {
+  align-items: center;
 }
 
 .list-auth:not(:last-child) {
@@ -121,16 +139,29 @@ address {
 }
 
 .link-auth {
-  display: block;
+  display: flex;
   padding: 32px 0;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
+  letter-spacing: 0.02em;
   line-height: 1.14;
   color: rgba(117, 117, 117, 1);
 }
+
 .link-auth:hover,
 .link-auth:focus {
   color: var(--hover);
+}
+
+.svg-auth {
+  margin-right: 10px;
+  fill: rgba(117, 117, 117, 1);
+}
+
+.link-auth:hover .svg-auth,
+.link-auth:focus .svg-auth {
+  fill: var(--hover);
 }
 
 /* Шапка */
@@ -139,17 +170,25 @@ address {
   padding-bottom: 200px;
   text-align: center;
   background-color: rgba(47, 48, 58, 1);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Чем\ мы\ занимаемся/Фон.jpg);
+  background-position: center;
 }
+
 .hero-text {
   box-sizing: border-box;
   width: 696px;
-  height: 120px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
+  letter-spacing: 0.06em;
   line-height: 1.36;
   color: rgba(255, 255, 255, 1);
 }
@@ -163,6 +202,7 @@ address {
   height: 50px;
   font-weight: bold;
   font-size: 16px;
+  letter-spacing: 0.06em;
   line-height: 1.87;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(33, 150, 243, 1);
@@ -172,13 +212,7 @@ address {
 /* Особенности */
 
 .after-hero {
-  margin: 0 auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.header-nav:not(:last-child) {
-  margin-right: 30px;
+  padding-bottom: 0px;
 }
 
 .hero-nav {
@@ -188,6 +222,15 @@ address {
 
 .hero-list:not(:last-child) {
   margin-right: 30px;
+}
+
+.hero-svg {
+  display: block;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  background-color: rgba(245, 244, 250, 1);
 }
 
 .zero-text {
@@ -211,10 +254,6 @@ address {
 }
 
 /* Чем мы занимаемся */
-
-.work {
-  padding-bottom: 94px;
-}
 
 .work-img {
   display: flex;
@@ -240,8 +279,6 @@ address {
 
 /* Наша команда */
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: rgba(245, 244, 250, 1);
 }
 
@@ -257,12 +294,11 @@ address {
   line-height: 1.16;
   color: var(--title-text);
 }
-.img-worker {
-  margin-bottom: 30px;
-}
 
 .team-itam {
   box-sizing: border-box;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: rgba(255, 255, 255, 1);
   text-align: center;
@@ -270,6 +306,10 @@ address {
 
 .team-itam:not(:last-child) {
   margin-right: 30px;
+}
+
+.team-div {
+  padding: 30px 32px;
 }
 
 .worker {
@@ -281,9 +321,39 @@ address {
   color: var(--title-text);
 }
 .team-text {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
+}
+
+.list-icon {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 1);
+  fill: var(--icon);
+  border-radius: 50%;
+}
+
+.itam-icon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.link-icon:hover,
+.link-icon:focus {
+  fill: var(--hover-icon);
+  background-color: var(--hover);
+}
+
+.svg-icon {
+  fill: var(--hover-icon);
 }
 
 /* Подвал */
@@ -323,11 +393,6 @@ address {
   color: rgba(255, 255, 255, 1);
 }
 
-/*.footer-text:hover,
-.footer-text:focus {
-  color: var(--hover);
-}*/
-
 .footer-mail {
   display: inline-block;
   margin-bottom: 9px;
@@ -338,11 +403,48 @@ address {
   color: var(--text);
 }
 
+.footer-flex {
+  display: flex;
+}
+
+.footer-auth {
+  margin-right: 70px;
+}
+
+.footer-list {
+  display: flex;
+}
+
+.text-social {
+  margin-top: 8px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--icon);
+  border-radius: 50%;
+}
+
+.footer-icon:hover,
+.footer-icon:focus {
+  fill: var(--hover-icon);
+  background-color: var(--hover);
+}
+
 /* Потфолио */
 
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+..portfolio {
+  max-height: ;
 }
 
 .portfolio-text {
@@ -393,30 +495,36 @@ address {
 
 .project {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
-.project-itam:not(:last-child) {
+.project-itam:hover,
+.project-itam:focus {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-itam {
+  flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.project-itam:nth-last-child(3n + 1) {
-  margin-right: 0px;
-}
-
 .project-div {
   padding: 20px 24px;
-  border-right: 1px solid rgba(238, 238, 238, 1);
-  border-bottom: 1px solid rgba(238, 238, 238, 1);
-  border-left: 1px solid rgba(238, 238, 238, 1);
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  border-left: 1px solid var(--line);
 }
 
 .project-title {
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
+  letter-spacing: 0.06em;
   line-height: 2;
   color: var(--title-text);
 }
@@ -424,4 +532,48 @@ address {
   font-size: 16px;
   line-height: 1.87;
   color: var(--text);
+}
+
+/*Постоянные клиенты*/
+
+.client-div {
+  display: block;
+}
+
+.client-text {
+  box-sizing: border-box;
+  width: 390px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--title-text);
+}
+
+.client-list {
+  display: flex;
+  justify-content: center;
+}
+
+.link-client {
+  display: block;
+  box-sizing: border-box;
+  height: 92px;
+  padding: 15px 31px;
+  border: 1px solid var(--icon);
+  border-radius: 4px;
+  fill: var(--icon);
+  cursor: pointer;
+}
+
+.client-itam:not(:last-child) {
+  margin-right: 30px;
+}
+
+.link-client:hover,
+.link-client:focus {
+  border: 1px solid var(--hover);
+  fill: var(--hover);
 }
