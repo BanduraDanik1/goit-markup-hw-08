@@ -325,10 +325,7 @@ button {
   text-align: center;
   text-transform: uppercase;
   color: var(--overlay-text);
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4));
+  background: rgba(47, 48, 58, 0.8);
 }
 
 /*.work-text-after{
