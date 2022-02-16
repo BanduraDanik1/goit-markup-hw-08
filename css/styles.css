@@ -64,9 +64,13 @@ address {
 }
 
 button {
-  border: none;
   padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
 }
+
+
 
 /*Контейнер*/
 .container {
@@ -469,6 +473,10 @@ button {
   display: flex;
 }
 
+.footer-social{
+  margin-right: 93px;
+}
+
 .text-social {
   margin-top: 8px;
   margin-bottom: 20px;
@@ -680,14 +688,14 @@ button {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--transform);
 }
 
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--transform);
 }
 
 
@@ -701,7 +709,6 @@ button {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 528px;
-  height: 581px;
   background: rgba(255, 255, 255, 1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -710,6 +717,9 @@ button {
 
 .btn-modal {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 8px;
   right: 8px;
   width: 30px;
@@ -718,4 +728,207 @@ button {
   background-color: rgba(255, 255, 255, 1);
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  transition: var(--transform);
+}
+
+.btn-modal:hover,
+.btn-modal:focus{
+  fill: var(--hover);
+}
+
+/* e-mail input */
+
+.subscribe-text{
+  margin-top: 8px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+}
+
+.subscribe-list{
+  display: flex;
+}
+
+.email{
+  margin-right: 12px;
+}
+
+.email input{
+  width: 358px;
+  height: 50px;
+  padding: 0px 16px;
+  color: rgba(255, 255, 255, 1);
+  background: rgba(47, 48, 58, 1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.email input::placeholder{
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.subscribe button[type="submit"]{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background: var(--hover);
+  border: transparent;
+}
+
+.icon-subscribe{
+  margin-left: 10px;
+}
+
+/* Form */
+
+.backdrop-text{
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  color:var(--title-text);
+}
+
+.backdrop-form{
+  margin-right: auto;
+  margin-left: auto;
+  width: 448px;
+}
+
+.backdrop-itam:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.form-label{
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--text);
+}
+
+
+.form-label div{
+  position: relative;
+  margin-top: 4px;
+}
+
+.form-input{
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: var(--transform);
+  outline:transparent;
+  cursor: pointer;
+  resize: none;
+}
+
+.form-input:not(:last-child){
+  height: 40px;
+  padding-left: 42px;
+}
+
+.form-label textarea{
+  width: 100%;
+  resize: none;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline:transparent;
+  cursor: pointer;
+}
+
+.form-label textarea:focus{
+  border-color: var(--hover);
+}
+
+.form-label div:focus-within .form-input , 
+.form-label div:focus-within .backdrop-icon{
+  fill: var(--hover);
+  border-color: var(--hover);
+}
+
+.backdrop-icon{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  transition: var(--transform);
+}
+
+.backdrop-last{
+  width: 423px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.label-last{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkbox{
+  appearance: none;
+  position: absolute;
+}
+
+.backdrop-svg{
+  width: 16px;
+  height: 15px;
+  border: 2px solid rgba(33, 33, 33, 1);
+  border-radius: 2px;
+}
+
+.checkbox:checked + .backdrop-svg{
+  border-color: rgba(33, 150, 243, 1);
+  background-color:rgba(33, 150, 243, 1);
+  background-image: url(../images/icons.svg/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  
+}
+
+.checkbox-link{
+  text-decoration: underline;
+  color:var(--logo)
+}
+
+.backdrop-btn{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 55px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  background-color: var(--hover);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--hover-icon);
 }
