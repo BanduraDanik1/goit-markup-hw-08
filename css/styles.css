@@ -787,7 +787,7 @@ button {
 }
 
 
-.modal__div{
+.modal__line{
   position: relative;
   margin-top: 4px;
 }
@@ -823,8 +823,8 @@ button {
   cursor: text;
 }
 
-.modal__div:focus-within .modal__input , 
-.modal__div:focus-within .modal__icon{
+.modal__line:focus-within .modal__input , 
+.modal__line:focus-within .modal__icon{
   fill: var(--hover);
   border-color: var(--hover);
   cursor: text;
