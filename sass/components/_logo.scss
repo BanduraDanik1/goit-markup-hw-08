@@ -1,0 +1,22 @@
+/* Логотип */
+.logo {
+    display: inline-block;
+    margin-right: 93px;
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    line-height: 1.19;
+    color: $hover;
+}
+
+.logo__studio {
+    &--black-text {
+        color: $log-black;
+    }
+
+    &--white-text {
+        color: $log-white;
+    }
+}

@@ -1,0 +1,35 @@
+/* Подвал */
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: rgba(47, 48, 58, 1);
+}
+
+.footer-auth {
+    margin-right: 70px;
+
+    &__list {
+        display: inline-block;
+        width: 231px;
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 1.71;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+    &__text {
+        display: inline-block;
+        box-sizing: border-box;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    &__link {
+        display: inline-block;
+        color: $text;
+    }
+}

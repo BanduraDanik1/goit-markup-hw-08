@@ -1,0 +1,40 @@
+/* footer-social */
+
+.footer-social {
+    margin-right: auto;
+}
+
+.footer-social__text {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-social__list {
+    display: flex;
+}
+
+.footer-social__icon:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: $icon;
+    border-radius: 50%;
+    transition: $transform;
+
+    &:hover,
+    &:focus {
+        fill: $hover-icon;
+        background-color: $hover;
+    }
+}

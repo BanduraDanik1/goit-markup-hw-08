@@ -1,0 +1,27 @@
+/*Постоянные клиенты*/
+
+
+.client-list {
+    display: flex;
+    justify-content: center;
+}
+
+.client-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.client-list__link {
+    display: inherit;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $icon;
+    border-radius: 4px;
+    fill: $icon;
+    transition: border $transform;
+
+    &:hover,
+    &:focus {
+        fill: $hover;
+        border-color: $hover;
+    }
+}
