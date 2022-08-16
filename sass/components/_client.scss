@@ -3,22 +3,41 @@
 
 .client-list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     justify-content: center;
+    @media (min-width:1200px) {
+        display: flex;
+        justify-content: center;
+        &item:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+  
 }
 
-.client-list__item:not(:last-child) {
-    margin-right: 30px;
-}
+// .client-list__item:not(:last-child) {
+//     margin-right: 30px;
+// }
 
 .client-list__link {
-    display: inherit;
-    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
     height: 92px;
     border: 1px solid $icon;
     border-radius: 4px;
     fill: $icon;
     transition: border $transform;
+    @media (min-width:768px){
+        width: 226px;
+    }
+    
+    @media (min-width:1200px){
+        width: 170px;
 
+    }
     &:hover,
     &:focus {
         fill: $hover;

@@ -2,9 +2,12 @@
 
 .filters {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    grid-gap:8px;
+    grid-row-gap:15px;
     height: auto;
-    justify-content: center;
 }
 
 .filters__list:not(:last-child) {

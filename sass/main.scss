@@ -1,18 +1,30 @@
+@import "./utils/variables";
+@import "./base/base";
+@import "./components/container";
+@import "./components/section";
+@import "./components/header";
+@import "./components/logo";
+@import "./components/header-navigation";
+@import "./components/auth-list";
+@import "./components/hero";
+@import "./components/after-hero";
+@import "./components/team";
+@import "./components/client";
+@import "./components/footer";
+@import "./components/join-footer";
+@import "./components/modal";
+@import "./components/modal-form";
+@import "./components/work";
+@import "./components/portfolio";
+@import "./components/project";
 
-@import"./utils/variables";
-@import"./base/base";
-@import"./components/container";
-@import"./components/page-header";
-@import"./components/logo";
-@import"./components/contact";
-@import"./components/head";
-@import"./components/peculiarities";
-@import"./components/team";
-@import"./components/footer";
-@import"./components/footer-social";
-@import"./components/porfolio";
-@import"./components/project";
-@import"./components/client";
-@import"./components/modal";
-@import"./components/email";
-@import"./components/form";
+.ppp{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: black;
+    @media (min-width:480px) and (min-width:767px){
+        display: none;
+    }
+}

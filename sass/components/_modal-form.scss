@@ -2,6 +2,7 @@
 
 .modal__text {
     margin-bottom: 12px;
+    text-align: center;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -85,7 +86,6 @@
 }
 
 .modal__last-div {
-    width: 423px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -94,7 +94,22 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
+    @media(min-width:200px){
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.span-text{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    @media (min-width:1200px) {
+        font-size: 14px;
+        line-height: 24px;
+    }
 }
 
 .modal__checkbox {
