@@ -8,6 +8,17 @@
     grid-gap:8px;
     grid-row-gap:15px;
     height: auto;
+
+    @media (min-width:768px) {
+        display: flex;
+        justify-content: center;
+    }
+
+    @media (min-width:1200px) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
 }
 
 .filters__list:not(:last-child) {
