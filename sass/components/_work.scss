@@ -1,10 +1,15 @@
 /* Чем мы занимаемся */
 
 .section--work {
-    @media (min-width:480px) and (min-width:768px) {
+    @media (max-width:320px)  {
         display: none;
     }
-
+    @media (min-width:480px)  {
+        display: none;
+    }
+     @media (min-width:768px) {
+        display: none;
+     }
     @media (min-width:1200px) {
         display: contents;
     }
