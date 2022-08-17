@@ -674,15 +674,15 @@ button {
 
 @media (min-width: 768px) {
   .footer--flex {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 30px 165px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    gap: 30px 165px;
   }
 }
 
@@ -717,6 +717,10 @@ button {
   .footer {
     text-align: center;
   }
+}
+
+.footer-auth {
+  text-align: center;
 }
 
 .footer-auth__list {
@@ -758,6 +762,10 @@ button {
 }
 
 /* footer-social */
+.footer-social {
+  text-align: center;
+}
+
 .footer-social__text {
   margin-top: 5px;
   margin-bottom: 20px;
@@ -782,6 +790,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 60px;
 }
 
 .footer-social__link {
@@ -805,6 +814,10 @@ button {
 .footer-social__link:hover, .footer-social__link:focus {
   fill: white;
   background-color: #2196f3;
+}
+
+.footer-subscribe {
+  text-align: center;
 }
 
 .footer-subscribe__text {
@@ -1484,15 +1497,16 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 20px;
 }
 
-.mobile-social__item--after::after {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+.mobile-social__link--after::after {
   content: "";
-  margin: 0px 10px;
+  position: absolute;
+  width: 1px;
   height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
+  margin-left: 10px;
 }
 
 .mobile-social__link {
