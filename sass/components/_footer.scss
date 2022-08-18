@@ -30,18 +30,24 @@
 
 .footer-auth {
     text-align: center;
+    margin-bottom: 60px;
+
+    @media (min-width:768px) {
+        margin-bottom: 0px;
+    }
+
+    @media (min-width:1200px) {
+        text-align: start;
+    }
 
     &__list {
         display: inline-block;
         width: 231px;
         margin-top: 20px;
-        margin-bottom: 60px;
         font-size: 14px;
         line-height: 1.71;
         color: rgba(255, 255, 255, 1);
-        @media (min-width:768px) {
-            margin-bottom: 0px;
-        }
+       
     }
 
     &__item:not(:last-child) {
@@ -67,6 +73,11 @@
 
 .footer-social{
     text-align: center;
+    margin-bottom: 60px;
+
+    @media (min-width:768px) {
+        margin-bottom: 0px;
+    }
 }
 
 .footer-social__text {

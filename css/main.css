@@ -552,16 +552,6 @@ button {
   text-align: center;
 }
 
-.team-list__item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-@media (min-width: 768px) {
-  .team-list__item:not(:last-child) {
-    margin-bottom: 0px;
-  }
-}
-
 @media (min-width: 768px) {
   .team-list__item {
     width: 354px;
@@ -721,22 +711,28 @@ button {
 
 .footer-auth {
   text-align: center;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+  .footer-auth {
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-auth {
+    text-align: start;
+  }
 }
 
 .footer-auth__list {
   display: inline-block;
   width: 231px;
   margin-top: 20px;
-  margin-bottom: 60px;
   font-size: 14px;
   line-height: 1.71;
   color: white;
-}
-
-@media (min-width: 768px) {
-  .footer-auth__list {
-    margin-bottom: 0px;
-  }
 }
 
 .footer-auth__item:not(:last-child) {
@@ -764,6 +760,13 @@ button {
 /* footer-social */
 .footer-social {
   text-align: center;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+  .footer-social {
+    margin-bottom: 0px;
+  }
 }
 
 .footer-social__text {
@@ -818,6 +821,18 @@ button {
 
 .footer-subscribe {
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer-subscribe {
+    width: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-subscribe {
+    width: 570px;
+  }
 }
 
 .footer-subscribe__text {
@@ -1297,8 +1312,6 @@ button {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
   }
 }
 
@@ -1317,8 +1330,8 @@ button {
 
 @media (min-width: 1200px) {
   .card-set__item {
-    -ms-flex-preferred-size: calc(100% / 3 - 30px);
-        flex-basis: calc(100% / 3 - 30px);
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
   }
 }
 

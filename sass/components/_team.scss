@@ -26,13 +26,7 @@
     border-radius: 0px 0px 4px 4px;
     background-color: rgba(255, 255, 255, 1);
     text-align: center;
-
-    &:not(:last-child) {
-        margin-bottom: 30px;
-        @media (min-width:768px) {
-                margin-bottom: 0px;
-            }
-    }
+    
     @media (min-width:768px) {
         width: 354px;
     }
